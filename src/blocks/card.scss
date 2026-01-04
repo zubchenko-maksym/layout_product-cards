@@ -2,7 +2,6 @@
 
 .card {
   width: 200px;
-  height: 408px;
   padding: 16px;
   padding-top: 32px;
   background: #fff;
@@ -10,24 +9,27 @@
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+  border: 1px solid #f3f3f3;
 
   &__image {
-    margin: 0 auto 16px;
     width: 160px;
     height: 134px;
     background-image: url('../images/imac.jpeg');
     background-size: cover;
     background-position: center;
     align-items: center;
+    margin-inline: auto;
+    margin-bottom: 40px;
   }
 
   &__title {
+    margin: 0;
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
-    padding-bottom: 4px;
-    margin-bottom: 4px;
     color: #0e0e2c;
+    margin-bottom: 4px;
   }
 
   &__code {
@@ -35,7 +37,7 @@
     font-weight: 400;
     line-height: 14px;
     color: #616070;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     align-self: start;
   }
 
@@ -43,7 +45,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
 
     .card__reviews {
       font-weight: 400;
@@ -71,6 +73,7 @@
       font-weight: 700;
       font-size: 16px;
       color: #060b35;
+      line-height: 18px;
     }
   }
 
@@ -78,17 +81,20 @@
     background-color: $primary-color;
     color: white;
     text-align: center;
-    padding: 14px 0;
+    padding: 12px 0;
     width: 100%;
     border-radius: 5px;
     font-weight: 700;
+    font-size: 14px;
     text-decoration: none;
-    transition: background-color 0.3s;
+    height: 40px;
+    box-sizing: border-box;
 
     &:hover {
       background-color: white;
       color: $primary-color;
       border: $card-border;
+      padding: 11px 0;
     }
   }
 }

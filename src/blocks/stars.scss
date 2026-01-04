@@ -1,15 +1,15 @@
 .stars {
   display: flex;
-  margin-bottom: 12px;
   align-items: center;
 
   &__icon {
     width: 16px;
-    height: 16px;
+    height: 12px;
     background-image: url('/src/images/star.svg'); // или используй inline svg как background
-    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
     margin-right: 4px;
+    margin-bottom: 2px;
   }
 
   &--5 .stars__icon:nth-child(-n + 4) {

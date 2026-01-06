@@ -15,10 +15,7 @@
   &__image {
     width: 160px;
     height: 134px;
-    background-image: url('../images/imac.jpeg');
-    background-size: cover;
-    background-position: center;
-    align-items: center;
+    display: block;
     margin-inline: auto;
     margin-bottom: 40px;
   }
